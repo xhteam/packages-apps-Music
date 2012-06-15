@@ -294,6 +294,8 @@ public class PlaylistBrowserActivity extends ListActivity
         if (mCreateShortcut) {
             return;
         }
+        if (menuInfoIn == null)
+            return;
 
         AdapterContextMenuInfo mi = (AdapterContextMenuInfo) menuInfoIn;
 
